@@ -1,0 +1,3 @@
+rootProject.name = 'colourjot2'
+
+include ':app'
