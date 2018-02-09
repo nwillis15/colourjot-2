@@ -20,6 +20,10 @@ const navStyles = {
   },
   titleGreen: {
     color: colors.noteGreen
+  },
+  button: {
+    color: colors.noteYellow,
+    fontSize: 25
   }
 };
 
