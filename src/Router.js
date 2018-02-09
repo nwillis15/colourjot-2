@@ -4,16 +4,16 @@ import LoginForm from './components/LoginForm';
 import NoteList from './components/NoteList';
 import NoteCreate from './components/NoteCreate';
 import NoteUpdate from './components/NoteUpdate';
+import NavBar from './components/navigation/NavBar';
 
 const RouterComponent = () => {
   return (
-    <Router>
-      <Scene key="root" hideNavBar>
-        <Scene key="auth">
+    <Router >
+      <Scene key="root" navBar={NavBar} hideNavBar="true"  duration={0}>
+        <Scene key="auth" >
           <Scene
             key="login"
             component={LoginForm}
-            title="ColourJot 2"
           />
         </Scene>
 
@@ -23,12 +23,11 @@ const RouterComponent = () => {
             onRight={() => Actions.noteCreate()}
             key="noteList"
             component={NoteList}
-            title="Notes"
             initial
           />
 
-          <Scene key="noteCreate" component={NoteCreate} title="Create Note" />
-          <Scene key="noteUpdate" component={NoteUpdate} title="Update Note" />
+          <Scene key="noteCreate" component={NoteCreate} />
+          <Scene key="noteUpdate" component={NoteUpdate} />
         </Scene>
       </Scene>
     </Router>
