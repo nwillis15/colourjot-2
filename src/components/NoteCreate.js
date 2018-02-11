@@ -1,10 +1,15 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { noteUpdate, noteCreate } from './../actions';
+import { noteCreate } from './../actions';
+import { noteNew } from './../actions';
 import { Card, CardSection, Button } from './common';
 import NoteForm from './NoteForm';
 
 class NoteCreate extends Component {
+
+  componentWillMount() {
+    this.props.noteNew();
+  }
 
   onButtonPress() {
     const { title, body } = this.props;
@@ -31,4 +36,4 @@ const mapStateToProps = (state) => {
   return { title, body };
 };
 
-export default connect(mapStateToProps, { noteUpdate, noteCreate })(NoteCreate);
+export default connect(mapStateToProps, { noteCreate, noteNew })(NoteCreate);

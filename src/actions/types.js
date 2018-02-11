@@ -4,6 +4,7 @@ export const LOGIN_USER_SUCCESS = 'login_user_success';
 export const LOGIN_USER_FAIL = 'login_user_fail';
 export const LOGIN_USER = 'login_user';
 
+export const NOTE_NEW = 'note_new';
 export const NOTE_UPDATE = 'note_update';
 export const NOTE_CREATE = 'note_create';
 export const NOTES_FETCH_SUCCESS = 'notes_fetch_success';
