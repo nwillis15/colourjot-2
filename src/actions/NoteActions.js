@@ -1,6 +1,13 @@
 import { Actions } from 'react-native-router-flux';
 import firebase from 'firebase';
-import { NOTE_UPDATE, NOTE_CREATE, NOTES_FETCH_SUCCESS, NOTE_SAVE_SUCCESS } from './types';
+import { NOTE_UPDATE, NOTE_CREATE, NOTES_FETCH_SUCCESS, NOTE_SAVE_SUCCESS, NOTE_NEW } from './types';
+
+export const noteNew = () => {
+  return {
+    type: NOTE_NEW,
+    payload: {}
+  };
+};
 
 export const noteUpdate = ({ prop, value }) => {
   return {
