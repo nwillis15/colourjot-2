@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import { Text } from 'react-native';
 import { connect } from 'react-redux';
 import { emailChanged, passwordChanged, loginUser } from '../actions';
-import { Card, CardSection, Input, Button, Spinner } from './common';
+import { Spinner } from './common';
+import { Page, PageSection, Input, Button } from './base';
 
 class LoginForm extends Component {
   onEmailChange(text) {
@@ -33,34 +34,32 @@ class LoginForm extends Component {
 
   render() {
     return (
-      <Card>
-        <CardSection>
+      <Page>
+        <PageSection>
           <Input
-            label="Email"
-            placeholder="email@gmail.com"
+            placeholder="email"
             onChangeText={this.onEmailChange.bind(this)}
             value={this.props.email}
           />
-        </CardSection>
+        </PageSection>
 
-        <CardSection>
+        <PageSection>
           <Input
             secureTextEntry
-            label="Password"
             placeholder="password"
             onChangeText={this.onPasswordChange.bind(this)}
             value={this.props.password}
           />
-        </CardSection>
+        </PageSection>
 
         <Text style={styles.errorTextStyle}>
           {this.props.error}
         </Text>
 
-        <CardSection>
+        <PageSection>
           {this.renderButton()}
-        </CardSection>
-      </Card>
+        </PageSection>
+      </Page>
     );
   }
 }
