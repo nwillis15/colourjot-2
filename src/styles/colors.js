@@ -1,11 +1,13 @@
 const colors = {
   white: '#fff',
-  black: '#000',
-  navbar: '#211A1E',
-  noteBlue: '#5BC0EB',
-  noteGreen: '#9BC53D',
-  noteRed: '#C3424F',
-  noteYellow: '#FDE74C'
+  black: '#191818',
+  navbar: '#191818',
+  noteBlue: '#1f8dd6',
+  noteGreen: '#5eb95e',
+  noteRed: '#dd514c',
+  noteYellow: '#fad232',
+  notePurple: '#8058a5',
+  noteOrange: '#f37b1d'
 };
 
 export default colors;
