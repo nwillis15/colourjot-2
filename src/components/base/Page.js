@@ -12,7 +12,7 @@ const Page = (props) => {
 
 const styles = {
   containerStyle: {
-    backgroundColor: colors.noteGreen,
+    backgroundColor: colors.pageBackground,
     flex: 1,
     paddingTop: '10%'
   }

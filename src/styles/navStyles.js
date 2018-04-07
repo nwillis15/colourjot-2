@@ -21,6 +21,12 @@ const navStyles = {
   titleGreen: {
     color: colors.noteGreen
   },
+  titlePurple: {
+    color: colors.notePurple
+  },
+  titleOrange: {
+    color: colors.noteOrange
+  },
   button: {
     color: colors.noteYellow,
     fontSize: 25

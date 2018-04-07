@@ -2,6 +2,7 @@ const colors = {
   white: '#fff',
   black: '#191818',
   navbar: '#191818',
+  pageBackground: '#FFFFF7',
   noteBlue: '#1f8dd6',
   noteGreen: '#5eb95e',
   noteRed: '#dd514c',
